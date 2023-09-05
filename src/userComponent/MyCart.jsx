@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";  //hooks
 import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";

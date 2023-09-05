@@ -1,8 +1,8 @@
 import Carousel from "./Carousel";
 import GetAllCategories from "../productComponent/GetAllCategories";
 import ProductCard from "../productComponent/ProductCard";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import axios from "axios";  //3rd party library
+import { useState, useEffect } from "react";  // reqact hooks
 import { useParams } from "react-router-dom";
 
 const HomePage = () => {

@@ -1,56 +1,42 @@
 
+import Sawan from "../images/bsawan.jpg";
+import Devika from "../images/Devika.png";
+import Bhawesh from "../images/bhawesh.jpeg.jpg";
+import Bhushan from "../images/Bhushan.jpg";
+import Vineeth from "../images/vineeth.jpeg.jpg";
+
+
+
 const ContactUs = () => {
   return (
     <div className="text-color ms-5 me-5 mr-5 mt-3">
       <b>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-        fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-        accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-        molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-        officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-        nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-        error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
-        modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias
-        error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
-        dolorem! Officiis iure rerum voluptates a cumque velit quibusdam sed
-        amet tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
-        temporibus enim commodi iusto libero magni deleniti quod quam
-        consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-        doloremque. Quaerat provident commodi consectetur veniam similique ad
-        earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
-        fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores
-        labore suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto
-        ab laudantium modi minima sunt esse temporibus sint culpa, recusandae
-        aliquam numquam totam ratione voluptas quod exercitationem fuga.
-        Possimus quis earum veniam quasi aliquam eligendi, placeat qui corporis!
-        1427 lorem ipsumWhatever By Shadow on Mar 26 2022 DonateThankComment
+        <h1> <center>We are here for you !</center></h1>
+        <h2> <center>Our team of experts is on hand to answer your questions</center></h2>
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-        fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-        accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-        molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-        officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-        nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-        error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
-        modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias
-        error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
-        dolorem! Officiis iure rerum voluptates a cumque velit quibusdam sed
-        amet tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
-        temporibus enim commodi iusto libero magni deleniti quod quam
-        consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-        doloremque. Quaerat provident commodi consectetur veniam similique ad
-        earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
-        fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores
-        labore suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto
-        ab laudantium modi minima sunt esse temporibus sint culpa, recusandae
-        aliquam numquam totam ratione voluptas quod exercitationem fuga.
-        Possimus quis earum veniam quasi aliquam eligendi, placeat qui corporis!
-        1427 lorem ipsumWhatever By Shadow on Mar 26 2022 DonateThankComment
+
+        <br />
+        <center>
+        <h4>Can't find the solution you are looking for? Here's how to get help from our experts</h4>
+        <br />
+        <p>Connect with our experts:<br></br>
+      
+        <br />
+          
+        <br />
+        <a href="https://www.linkedin.com/in/sawanrbhavsar28/" target="_blank"><img src={Sawan} alt="Sawan Image" height={150} width={120}/></a>                <a href="https://www.linkedin.com/in/devikajadli/" target="_blank"> <img src={Devika} alt="Devika Image" height={150} width={120}/></a>                   <a href="https://www.linkedin.com/in/bhaweshdewangan7/" target="_blank"> <img src={Bhawesh} alt="Bhawesh Image" height={150} width={120}/></a>                        <a href="https://www.linkedin.com/in/vineeth-kumar-gaddam-2131a5175/" target="_blank"> <img src={Vineeth} alt="Vineeth Image" height={150} width={120}/></a>                   <a href="https://www.linkedin.com/in/bhushan-sawant-882b96187/" target="_blank"> <img src={Bhushan} alt="bhushan Image" height={150} width={120}/></a>   
+
+
+        
+        </p>
+        </center>
+
+        
+        
+        
+
+        
       </b>
     </div>
   );

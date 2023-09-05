@@ -1,62 +1,73 @@
-import carousel1 from "../images/carousel_1.jpeg";
+import React, { useState, useEffect } from 'react';
+import carousel1 from "../images/easycart banner 1.png";
+import carousel2 from "../images/easycart banner 2.png";
+import carousel3 from "../images/easycart banner 3.png";
+import carousel4 from "../images/banner 2.jpg";
 
 const Carousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const images = [carousel1, carousel4, carousel2, carousel3];
+
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  useEffect(() => {
+    const interval = (nextSlide, 2000); // Change slide every 5 seconds
+
+    return () => {
+      clearInterval(interval); // Clear the interval when the component unmounts
+    };
+  }, []);
+
   return (
     <div
       id="carouselExampleCaptions"
-      class="carousel slide"
-      data-bs-ride="false"
+      className="carousel slide"
+      data-bs-ride="carousel" // Change to "carousel" to enable automatic sliding
     >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+      <div className="carousel-indicators">
+        {/* Indicators */}
+        {images.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to={index}
+            className={index === activeIndex ? "active" : ""}
+            aria-current={index === activeIndex ? "true" : "false"}
+            aria-label={`Slide ${index + 1}`}
+          ></button>
+        ))}
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src={carousel1} class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src={carousel1} class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src={carousel1} class="d-block w-100" alt="..." />
-        </div>
+      <div className="carousel-inner">
+        {/* Slides */}
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`carousel-item ${index === activeIndex ? "active" : ""}`}
+          >
+            <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+          </div>
+        ))}
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );
